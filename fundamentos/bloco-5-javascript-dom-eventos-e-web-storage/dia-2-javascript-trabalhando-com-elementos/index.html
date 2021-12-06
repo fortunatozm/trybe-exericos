@@ -59,15 +59,54 @@
     <script>
       // COLOQUE SEU CÓDIGO AQUI
 
+      function createElement (elementLocal, elementName, nameClasss){
 
-      let elementLocal = document.querySelector ('body');
+        if(nameClasss != null){
+          let newElementLocal = document.querySelector (elementLocal);
 
-      let newElement = document.createElement('h1');
+          let newElement = document.createElement(elementName);
 
-      elementLocal.appendChild(newElement);
+          newElement.className = nameClasss;
 
-      console.log(newElement);
+          newElementLocal.appendChild(newElement);
 
+          return newElement;
+
+        } else {
+
+          let newElementLocal = document.querySelector (elementLocal);
+
+          let newElement = document.createElement(elementName);
+
+          newElementLocal.appendChild(newElement);
+
+          return newElement;
+
+        }
+        
+      }
+
+
+// Exercicio 1
+
+      let novoElemento = 'h1';
+      let local = 'body';
+      createElement(local, novoElemento);
+  
+// Exercicio 2
+
+      let novoElemento2 = 'main';
+      let local2 = 'body';
+      let classe2 = 'main-content';
+      createElement(local2, novoElemento2, classe2);
+
+// Exercicio 3
+
+      let novoElemento3 = 'section';
+      let local3 = 'main';
+      let classe3 = 'center-content';
+      createElement(local3, novoElemento3, classe3);
+      
     </script>
   </body>
 </html>
