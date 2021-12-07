@@ -137,11 +137,15 @@
 
 // Exrcicio 7
 
-      let local7 = document.getElementsByClassName('left-content');
+      let local7 = document.querySelector ('.left-content');
 
       console.log(local7);
       let novoElemento7 = document.createElement('img');
-      //local7.appendChild(novoElemento7);
+      local7.appendChild (novoElemento7);
+      novoElemento7.setAttribute('src', 'https://picsum.photos/200');
+      novoElemento7.className = 'small-image';
+
+// Exercicio 8
 
       
     </script>
