@@ -139,7 +139,6 @@
 
       let local7 = document.querySelector ('.left-content');
 
-      console.log(local7);
       let novoElemento7 = document.createElement('img');
       local7.appendChild (novoElemento7);
       novoElemento7.setAttribute('src', 'https://picsum.photos/200');
@@ -147,6 +146,21 @@
 
 // Exercicio 8
 
+      let local8 = document.querySelector ('.right-content');
+
+      let novoElemento8 = document.createElement('ul');
+      local8.appendChild (novoElemento8);
+
+      let list = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      for (let index = 0; index < list.length; index++) {
+
+        let listaa = document.createElement('li');
+        novoElemento8.appendChild(listaa);        
+        listaa.innerHTML = list[index]
+        
+      }
+      novoElemento8.className = 'small-image';
       
     </script>
   </body>
