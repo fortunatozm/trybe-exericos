@@ -180,15 +180,16 @@
       
 // Exrcicio 2.1
 
-      let titleH1 = document.querySelector ('.main-content');
-      titleH1.lastElementChild.className = 'title';
-      titleH1.lastElementChild.previousElementSibling.className = 'title';
-      titleH1.lastElementChild.previousElementSibling.previousElementSibling.className = 'title';
-      console.log(titleH1);
+      let titleH1 = document.querySelector ('h1');
+
+      titleH1.className = 'title';
 // Exrcicio 2.2
 
-      //let titleH3 = document.querySelector ('');
-      //titleH3.className = 'description';
+      let titleH3 = document.querySelector ('.main-content');
+      titleH3.lastElementChild.className = 'description';
+      titleH3.lastElementChild.previousElementSibling.className = 'description';
+      titleH3.lastElementChild.previousElementSibling.previousElementSibling.className = 'description';
+
 
     </script>
   </body>
