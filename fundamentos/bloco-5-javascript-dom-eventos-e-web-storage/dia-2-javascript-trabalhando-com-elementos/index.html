@@ -178,10 +178,17 @@
       createElement(localh32, novoElementoh32);      
       createElement(localh33, novoElementoh33);
       
-// Exrcicio 1.1
+// Exrcicio 2.1
 
-      let titleH1 = document.querySelector ('h1');
-      titleH1.className = 'title';
+      let titleH1 = document.querySelector ('.main-content');
+      titleH1.lastElementChild.className = 'title';
+      titleH1.lastElementChild.previousElementSibling.className = 'title';
+      titleH1.lastElementChild.previousElementSibling.previousElementSibling.className = 'title';
+      console.log(titleH1);
+// Exrcicio 2.2
+
+      //let titleH3 = document.querySelector ('');
+      //titleH3.className = 'description';
 
     </script>
   </body>
