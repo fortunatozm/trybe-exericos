@@ -183,12 +183,19 @@
       let titleH1 = document.querySelector ('h1');
 
       titleH1.className = 'title';
+
 // Exrcicio 2.2
 
       let titleH3 = document.querySelector ('.main-content');
       titleH3.lastElementChild.className = 'description';
       titleH3.lastElementChild.previousElementSibling.className = 'description';
       titleH3.lastElementChild.previousElementSibling.previousElementSibling.className = 'description';
+
+// Exericio 2.3
+
+      let removeLocal = document.querySelector('main');
+      let aRemover = document.querySelector('.left-content');
+      removeLocal.removeChild(aRemover);
 
 
     </script>
